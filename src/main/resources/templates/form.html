@@ -2,42 +2,44 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 <div class="container">
-    <h2 class="text-center">Customer Add Form</h2>
+    <h2 class="text-center">Fill in the fields</h2>
     <form method="post">
         <div class="form-group">
-            <label for="firstName">Name</label>
+            FirstName: <br>
             <input type="text" class="form-control" name="firstName" id="firstName"><br/>
         </div>
         <div class="form-group">
-            <label for="lastName">SurnName</label>
+            LastName: <br>
             <input type="text" class="form-control" name="lastName" id="lastName"><br/>
         </div>
         <div class="form-group">
-            <label for="emailAddress">Email</label>
+            Email: <br>
             <input type="text" class="form-control" name="emailAddress" id="emailAddress"><br/>
         </div>
         <div class="form-group">
-            <label for="jobTitle">Job</label>
+            Job : <br>
             <input type="text" class="form-control" name="jobTitle" id="jobTitle"><br/>
         </div>
         <div class="form-group">
-            <label for="mobilePhone">Phone number</label>
+            Phone number: <br>
             <input type="text" class="form-control" name="mobilePhone" id="mobilePhone"><br/>
         </div>
         <div class="form-group">
-            <label for="city">City</label>
+            City: <br>
             <input type="text" class="form-control" name="city" id="city"><br/>
         </div>
         <div class="form-group">
-            <label for="webPage">Web Page</label>
+            Web Page: <br>
             <input type="text" class="form-control" name="webPage" id="webPage"><br/>
         </div>
-        <button type="submit"  class="btn btn-primary">Submit</button>
+        <br>
+        <button type="submit"  class="btn" style="color: green">Submit</button>
     </form>
 </div>
 

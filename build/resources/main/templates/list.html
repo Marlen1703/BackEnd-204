@@ -1,14 +1,15 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head><title>Customer List</title>
+
   </head>
 <body>
-<div class="container">
-<h2 class="text-center mt-5">Customer List</h2>
+<h2>Customers:</h2>
     <div th:unless="${#lists.isEmpty(customers)}">
         <dl th:each="customer : ${customers}">
             <dt class="">
                 <span>First Name: </span><span th:text="${customer.firstName}"></span>
             </dt>
+
             <dt>
                 <span>Last Name: </span><span th:text="${customer.lastName}">Last Name:</span>
             </dt>
