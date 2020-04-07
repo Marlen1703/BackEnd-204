@@ -1,6 +1,6 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head><title>Customer List</title>
-
+    <link rel="stylesheet" href="style.css">
   </head>
 <body>
 <h2>Customers:</h2>
@@ -31,7 +31,10 @@
     </div>
     <div th:if="${#lists.isEmpty(customers)}" class="text-center">
         <p >No customers registered in the system</p>
-        <a href="/customers/add" class="btn btn-primary">Add new customers</a>
+<button class="btn">
+    <a href="/customers/add">Add new customer</a>
+</button>
+
     </div>
 </div>
 </body>
